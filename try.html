@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .answer {
+            display: none;
+        }
+
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+    <body>
+
+        <div style="width: 100%; height: 70px; left: 0px; top: 0px; position: absolute; background: #050045"></div>
+
+        <h1 align="center" style="offset-position: 100px; color: white;"> CALENDAR</h1>
+
+        <div align="center" style="offset-position: 130px;">
+            <button class="toggle" style="size: 120%">FAQ Number 1</button>
+            <div class="answer">
+
+              <!-- change contents to button -->
+
+              <p align="center">Answer to FAQ Number 1.  
+                <ul align="left">
+                  <li>This is the first div test.</li>
+                  <li>To make a div initially display, remove CHECKED form the input checkbox.</li>
+                  <li>To make a div show initially hidden, add CHECKED to the checkbox as done above.</li>
+                </ul>
+              </p>
+            </div>
+            <!-- Repeat for other FAQs -->
+          </div>
+
+          <div align="center">
+            <button class="toggle" style="size: 120%;">FAQ Number 2</button>
+            <div class="answer">
+              <p align="center">Answer to FAQ Number 1.  
+                <ul>
+                  <li align="left">This is the second div test.</li>
+                </ul>
+              </p>
+            </div>
+            <!-- Repeat for other FAQs -->
+          </div>
+
+    </body>
+
+    <script>
+        document.querySelectorAll('.toggle').forEach(button => {
+            button.addEventListener('click', () => {
+              const answer = button.nextElementSibling;
+              answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+            });
+          });
+    </script>
+</html>
