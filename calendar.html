@@ -1,102 +1,990 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CALENDAR</title>
-</head>
-<style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: rgb(255, 239, 228);
-    }
+<html>
+    <style>
+        .answer {
+            display: none;
 
-    h1 {
-        color: white;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: black;
-    }
+            -webkit-animation-name: cssAnimation;
+            -webkit-animation-duration: .5s; 
+            -webkit-animation-iteration-count: 1;
+        }
 
-    tbody {
-        height: 2cm;
-        font-size: 25px;
-    }
+        @-webkit-keyframes cssAnimation { 
+            from { 
+                -webkit-transform: rotate(0deg) scale(0) skew(0deg); 
+            } 
+            to { 
+                -webkit-transform: rotate(360deg) scale(1) skew(0deg); 
+            } 
+        }
 
-    th:hover {
-        background-color: rgb(202, 202, 202);
-        transition-duration: 0.1s;
-    }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(198, 199, 255);
+        }
     
-</style>
-<body>
-    <h1 align="center"> JANUARY 2024 </h1>
+        h1 {
+            color: white;
+        }
+    
+        tbody {
+            height: 2cm;
+            font-size: 25px;
+        }
+    
+        th:hover {
+            background-color: rgb(0, 0, 0);
+            transition-duration: 0.2s;
+            color: white;
+        }
 
-    <!-- NOTE: MUST BE HIDDEN. USE JAVASCRIPT. -->
+    </style>
+    <body>
+        <!-- global setting for all contents in the body is found in <style> -->
 
-    <table align="center" border="1cm" style="width: 75%;" >
-        <thead align="center" style="color: white; height: 1cm;">
-            <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
-                <th> SUNDAY </th>
-                <th> MONDAY </th>
-                <th> TUESDAY </th>
-                <th> WEDNESDAY </th>
-                <th> THURSDAY </th>
-                <th> FRIDAY </th>
-                <th> SATURDAY </th>
-            </tr>
-        </thead>
+        <!-- header lines. -->
 
-        <tbody>
-            <th> </th>
-            <th> 1 </th>
-            <th> 2 </th>
-            <th> 3 </th>
-            <th> 4 </th>
-            <th> 5 </th>
-            <th> 6 </th>
-        </tbody>
+        <!-- current objective: menu bars. -->
+        
+        <div style="width: 100%; height: 70px; left: 0px; top: 0px; position: absolute; background: rgb(5, 0, 71)">
+            <img href="">
+            <h1 style="left: 100px; color: white;"><b>C A L E N D A R</b></h1>
+        </div>
+    
+    <!-- buttons -->
+    <div style="top: 85px; position:relative;">
+        
+        <!-- JANUARY -->
+        <div align="center">
+          <button class="toggle" style="background-color: white; border: 10%; font-weight: bold; font-size: 160%; width: 50%; height: 40px;">
+            JANUARY</button>
+            <div class="answer">
+              <h1 align="center" style="-webkit-text-stroke-width: 2px; -webkit-text-stroke-color: black;">JANUARY 2024</h1>
+              <table align="center" border="1cm" style="width: 75%;" >
+                <thead align="center" style="color: white; height: 1cm;">
+                    <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
+                        <th> SUNDAY </th>
+                        <th> MONDAY </th>
+                        <th> TUESDAY </th>
+                        <th> WEDNESDAY </th>
+                        <th> THURSDAY </th>
+                        <th> FRIDAY </th>
+                        <th> SATURDAY </th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <th> </th>
+                    <th> 1 </th>
+                    <th> 2 </th>
+                    <th> 3 </th>
+                    <th> 4 </th>
+                    <th> 5 </th>
+                    <th> 6 </th>
+                </tbody>
+        
+                <tbody>
+                    <th> 7 </th>
+                    <th> 8 </th>
+                    <th> 9 </th>
+                    <th> 10 </th>
+                    <th> 11 </th>
+                    <th> 12 </th>
+                    <th> 13 </th>
+                </tbody>
+        
+                <tbody>
+                    <th> 14 </th>
+                    <th> 15 </th>
+                    <th> 16 </th>
+                    <th> 17 </th>
+                    <th> 18 </th>
+                    <th> 19 </th>
+                    <th> 20 </th>
+                </tbody>
+        
+                <tbody>
+                    <th> 21 </th>
+                    <th> 22 </th>
+                    <th> 23 </th>
+                    <th> 24 </th>
+                    <th> 25 </th>
+                    <th> 26 </th>
+                    <th> 27 </th>
+                </tbody>
+        
+                <tbody>
+                    <th> 28 </th>
+                    <th> 29 </th>
+                    <th> 30 </th>
+                    <th> 31 </th>
+                    <th> </th>
+                    <th> </th>
+                    <th> </th>
+                </tbody>
+        
+            </table>
+            </div>
+            <br>
+            <br>
+        </div>
 
-        <tbody>
-            <th> 7 </th>
-            <th> 8 </th>
-            <th> 9 </th>
-            <th> 10 </th>
-            <th> 11 </th>
-            <th> 12 </th>
-            <th> 13 </th>
-        </tbody>
+        <!-- FEBRUARY -->
+        <div align="center">
+            <button class="toggle" style="background-color: white; border: 10%; font-weight: bold; font-size: 160%; width: 50%; height: 40px;">
+              FEBRUARY</button>
+              <div class="answer">
+                <h1 align="center" style="-webkit-text-stroke-width: 2px; -webkit-text-stroke-color: black;">FEBRUARY 2024</h1>
+                <table align="center" border="1cm" style="width: 75%;" >
+                  <thead align="center" style="color: white; height: 1cm;">
+                      <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
+                          <th> SUNDAY </th>
+                          <th> MONDAY </th>
+                          <th> TUESDAY </th>
+                          <th> WEDNESDAY </th>
+                          <th> THURSDAY </th>
+                          <th> FRIDAY </th>
+                          <th> SATURDAY </th>
+                      </tr>
+                  </thead>
+          
+                  <tbody>
+                      <th> </th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th> 1 </th>
+                      <th> 2 </th>
+                      <th> 3 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 4 </th>
+                      <th> 5 </th>
+                      <th> 6 </th>
+                      <th> 7 </th>
+                      <th> 8 </th>
+                      <th> 9 </th>
+                      <th> 10 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 11 </th>
+                      <th> 12 </th>
+                      <th> 13 </th>
+                      <th> 14 </th>
+                      <th> 15 </th>
+                      <th> 16 </th>
+                      <th> 17 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 18 </th>
+                      <th> 19 </th>
+                      <th> 20 </th>
+                      <th> 21 </th>
+                      <th> 22 </th>
+                      <th> 23 </th>
+                      <th> 24 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 25 </th>
+                      <th> 26 </th>
+                      <th> 27 </th>
+                      <th> 28 </th>
+                      <th> 29 </th>
+                      <th> </th>
+                      <th> </th>
+                  </tbody>
+          
+              </table>
+              </div>
+              <br>
+              <br>
+        </div>
 
-        <tbody>
-            <th> 14 </th>
-            <th> 15 </th>
-            <th> 16 </th>
-            <th> 17 </th>
-            <th> 18 </th>
-            <th> 19 </th>
-            <th> 20 </th>
-        </tbody>
+        <!-- MARCH -->
+        <div align="center">
+            <button class="toggle" style="background-color: white; border: 10%; font-weight: bold; font-size: 160%; width: 50%; height: 40px;">
+              MARCH</button>
+              <div class="answer">
+                <h1 align="center" style="-webkit-text-stroke-width: 2px; -webkit-text-stroke-color: black;">MARCH 2024</h1>
+                <table align="center" border="1cm" style="width: 75%;" >
+                  <thead align="center" style="color: white; height: 1cm;">
+                      <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
+                          <th> SUNDAY </th>
+                          <th> MONDAY </th>
+                          <th> TUESDAY </th>
+                          <th> WEDNESDAY </th>
+                          <th> THURSDAY </th>
+                          <th> FRIDAY </th>
+                          <th> SATURDAY </th>
+                      </tr>
+                  </thead>
+          
+                  <tbody>
+                      <th>  </th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th> 1 </th>
+                      <th> 2 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 3 </th>
+                      <th> 4 </th>
+                      <th> 5 </th>
+                      <th> 6 </th>
+                      <th> 7 </th>
+                      <th> 8 </th>
+                      <th> 9 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 10 </th>
+                      <th> 11 </th>
+                      <th> 12 </th>
+                      <th> 13 </th>
+                      <th> 14 </th>
+                      <th> 15 </th>
+                      <th> 16 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 17 </th>
+                      <th> 18 </th>
+                      <th> 19 </th>
+                      <th> 20 </th>
+                      <th> 21 </th>
+                      <th> 22 </th>
+                      <th> 23 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 24 </th>
+                      <th> 25 </th>
+                      <th> 26 </th>
+                      <th> 27 </th>
+                      <th> 28 </th>
+                      <th> 29 </th>
+                      <th> 30 </th>
+                  </tbody>
 
-        <tbody>
-            <th> 21 </th>
-            <th> 22 </th>
-            <th> 23 </th>
-            <th> 24 </th>
-            <th> 25 </th>
-            <th> 26 </th>
-            <th> 27 </th>
-        </tbody>
+                  <tbody>
+                    <th> 31 </th>
+                    <th> </th>
+                    <th> </th>
+                    <th> </th>
+                    <th> </th>
+                    <th> </th>
+                    <th> </th>
+                </tbody>
+          
+              </table>
+              </div>
+              <br>
+              <br>
+        </div>
 
-        <tbody>
-            <th> 28 </th>
-            <th> 29 </th>
-            <th> 30 </th>
-            <th> 31 </th>
-            <th> </th>
-            <th> </th>
-            <th> </th>
-        </tbody>
+        <!-- APRIL -->
+        <div align="center">
+            <button class="toggle" style="background-color: white; border: 10%; font-weight: bold; font-size: 160%; width: 50%; height: 40px;">
+              APRIL</button>
+              <div class="answer">
+                <h1 align="center" style="-webkit-text-stroke-width: 2px; -webkit-text-stroke-color: black;">APRIL 2024</h1>
+                <table align="center" border="1cm" style="width: 75%;" >
+                  <thead align="center" style="color: white; height: 1cm;">
+                      <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
+                          <th> SUNDAY </th>
+                          <th> MONDAY </th>
+                          <th> TUESDAY </th>
+                          <th> WEDNESDAY </th>
+                          <th> THURSDAY </th>
+                          <th> FRIDAY </th>
+                          <th> SATURDAY </th>
+                      </tr>
+                  </thead>
+          
+                  <tbody>
+                      <th>  </th>
+                      <th> 1 </th>
+                      <th> 2 </th>
+                      <th> 3 </th>
+                      <th> 4 </th>
+                      <th> 5 </th>
+                      <th> 6 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 7 </th>
+                      <th> 8 </th>
+                      <th> 9 </th>
+                      <th> 10 </th>
+                      <th> 11 </th>
+                      <th> 12 </th>
+                      <th> 13 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 14 </th>
+                      <th> 15 </th>
+                      <th> 16 </th>
+                      <th> 17 </th>
+                      <th> 18 </th>
+                      <th> 19 </th>
+                      <th> 20 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 21 </th>
+                      <th> 22 </th>
+                      <th> 23 </th>
+                      <th> 24 </th>
+                      <th> 25 </th>
+                      <th> 26 </th>
+                      <th> 27 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 28 </th>
+                      <th> 29 </th>
+                      <th> 30 </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                  </tbody>
 
-    </table>
+              </table>
+              </div>
+              <br>
+              <br>
+        </div>
 
-</body>
+        <!-- MAY -->
+        <div align="center">
+            <button class="toggle" style="background-color: white; border: 10%; font-weight: bold; font-size: 160%; width: 50%; height: 40px;">
+              MAY</button>
+              <div class="answer">
+                <h1 align="center" style="-webkit-text-stroke-width: 2px; -webkit-text-stroke-color: black;">MAY 2024</h1>
+                <table align="center" border="1cm" style="width: 75%;" >
+                  <thead align="center" style="color: white; height: 1cm;">
+                      <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
+                          <th> SUNDAY </th>
+                          <th> MONDAY </th>
+                          <th> TUESDAY </th>
+                          <th> WEDNESDAY </th>
+                          <th> THURSDAY </th>
+                          <th> FRIDAY </th>
+                          <th> SATURDAY </th>
+                      </tr>
+                  </thead>
+          
+                  <tbody>
+                      <th>  </th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th> 1 </th>
+                      <th> 2 </th>
+                      <th> 3 </th>
+                      <th> 4 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 5 </th>
+                      <th> 6 </th>
+                      <th> 7 </th>
+                      <th> 8 </th>
+                      <th> 9 </th>
+                      <th> 10 </th>
+                      <th> 11 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 12 </th>
+                      <th> 13 </th>
+                      <th> 14 </th>
+                      <th> 15 </th>
+                      <th> 16 </th>
+                      <th> 17 </th>
+                      <th> 18 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 19 </th>
+                      <th> 20 </th>
+                      <th> 21 </th>
+                      <th> 22 </th>
+                      <th> 23 </th>
+                      <th> 24 </th>
+                      <th> 25 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 26 </th>
+                      <th> 27 </th>
+                      <th> 28 </th>
+                      <th> 29 </th>
+                      <th> 30 </th>
+                      <th> 31 </th>
+                      <th> </th>
+                  </tbody>
+
+              </table>
+              </div>
+              <br>
+              <br>
+        </div>
+
+        <!-- JUNE -->
+        <div align="center">
+            <button class="toggle" style="background-color: white; border: 10%; font-weight: bold; font-size: 160%; width: 50%; height: 40px;">
+              JUNE</button>
+              <div class="answer"> 
+                <h1 align="center" style="-webkit-text-stroke-width: 2px; -webkit-text-stroke-color: black;">JUNE 2024</h1>
+                <table align="center" border="1cm" style="width: 75%; size: 70%" >
+                  <thead align="center" style="color: white; height: 1cm;">
+                      <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
+                          <th> SUNDAY </th>
+                          <th> MONDAY </th>
+                          <th> TUESDAY </th>
+                          <th> WEDNESDAY </th>
+                          <th> THURSDAY </th>
+                          <th> FRIDAY </th>
+                          <th> SATURDAY </th>
+                      </tr>
+                  </thead>
+          
+                  <tbody>
+                      <th>  </th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th> 1 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 2 </th>
+                      <th> 3 </th>
+                      <th> 4 </th>
+                      <th> 5 </th>
+                      <th> 6 </th>
+                      <th> 7 </th>
+                      <th> 8 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 9 </th>
+                      <th> 10 </th>
+                      <th> 11 </th>
+                      <th> 12 </th>
+                      <th> 13 </th>
+                      <th> 14 </th>
+                      <th> 15 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 16 </th>
+                      <th> 17 </th>
+                      <th> 18 </th>
+                      <th> 19 </th>
+                      <th> 20 </th>
+                      <th> 21 </th>
+                      <th> 22 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 23 </th>
+                      <th> 24 </th>
+                      <th> 25 </th>
+                      <th> 26 </th>
+                      <th> 27 </th>
+                      <th> 28 </th>
+                      <th> 29 </th>
+                  </tbody>
+
+                  <tbody>
+                    <th> 30 </th>
+                    <th>  </th>
+                    <th>  </th>
+                    <th>  </th>
+                    <th>  </th>
+                    <th>  </th>
+                    <th> </th>
+                </tbody>
+
+              </table>
+              </div>
+              <br>
+              <br>
+        </div>
+
+        <!-- JULY -->
+        <div align="center">
+            <button class="toggle" style="background-color: white; border: 10%; font-weight: bold; font-size: 160%; width: 50%; height: 40px;">
+              JULY</button>
+              <div class="answer"> 
+                <h1 align="center" style="-webkit-text-stroke-width: 2px; -webkit-text-stroke-color: black;">JULY 2024</h1>
+                <table align="center" border="1cm" style="width: 75%; size: 70%" >
+                  <thead align="center" style="color: white; height: 1cm;">
+                      <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
+                          <th> SUNDAY </th>
+                          <th> MONDAY </th>
+                          <th> TUESDAY </th>
+                          <th> WEDNESDAY </th>
+                          <th> THURSDAY </th>
+                          <th> FRIDAY </th>
+                          <th> SATURDAY </th>
+                      </tr>
+                  </thead>
+          
+                  <tbody>
+                      <th>  </th>
+                      <th> 1 </th>
+                      <th> 2 </th>
+                      <th> 3 </th>
+                      <th> 4 </th>
+                      <th> 5 </th>
+                      <th> 6 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 7 </th>
+                      <th> 8 </th>
+                      <th> 9 </th>
+                      <th> 10 </th>
+                      <th> 11 </th>
+                      <th> 12 </th>
+                      <th> 13 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 14 </th>
+                      <th> 15 </th>
+                      <th> 16 </th>
+                      <th> 17 </th>
+                      <th> 18 </th>
+                      <th> 19 </th>
+                      <th> 20 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 21 </th>
+                      <th> 22 </th>
+                      <th> 23 </th>
+                      <th> 24 </th>
+                      <th> 25 </th>
+                      <th> 26 </th>
+                      <th> 27 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 28 </th>
+                      <th> 29 </th>
+                      <th> 30 </th>
+                      <th> 31 </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                  </tbody>
+
+              </table>
+              </div>
+              <br>
+              <br>
+        </div>
+
+        <!-- AUGUST -->
+        <div align="center">
+            <button class="toggle" style="background-color: white; border: 10%; font-weight: bold; font-size: 160%; width: 50%; height: 40px;">
+              AUGUST</button>
+              <div class="answer"> 
+                <h1 align="center" style="-webkit-text-stroke-width: 2px; -webkit-text-stroke-color: black;">AUGUST 2024</h1>
+                <table align="center" border="1cm" style="width: 75%; size: 70%" >
+                  <thead align="center" style="color: white; height: 1cm;">
+                      <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
+                          <th> SUNDAY </th>
+                          <th> MONDAY </th>
+                          <th> TUESDAY </th>
+                          <th> WEDNESDAY </th>
+                          <th> THURSDAY </th>
+                          <th> FRIDAY </th>
+                          <th> SATURDAY </th>
+                      </tr>
+                  </thead>
+          
+                  <tbody>
+                      <th>  </th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th> 1 </th>
+                      <th> 2 </th>
+                      <th> 3 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 4 </th>
+                      <th> 5 </th>
+                      <th> 6 </th>
+                      <th> 7 </th>
+                      <th> 8 </th>
+                      <th> 9 </th>
+                      <th> 10 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 11 </th>
+                      <th> 12 </th>
+                      <th> 13 </th>
+                      <th> 14 </th>
+                      <th> 15 </th>
+                      <th> 16 </th>
+                      <th> 17 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 18 </th>
+                      <th> 19 </th>
+                      <th> 20 </th>
+                      <th> 21 </th>
+                      <th> 22 </th>
+                      <th> 23 </th>
+                      <th> 24 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 25 </th>
+                      <th> 26 </th>
+                      <th> 27 </th>
+                      <th> 28 </th>
+                      <th> 29 </th>
+                      <th> 30 </th>
+                      <th> 31 </th>
+                  </tbody>
+
+              </table>
+              </div>
+              <br>
+              <br>
+        </div>
+
+        <!-- SEPTEMBER -->
+        <div align="center">
+            <button class="toggle" style="background-color: white; border: 10%; font-weight: bold; font-size: 160%; width: 50%; height: 40px;">
+              SEPTEMBER</button>
+              <div class="answer"> 
+                <h1 align="center" style="-webkit-text-stroke-width: 2px; -webkit-text-stroke-color: black;">SEPTEMBER 2024</h1>
+                <table align="center" border="1cm" style="width: 75%; size: 70%" >
+                  <thead align="center" style="color: white; height: 1cm;">
+                      <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
+                          <th> SUNDAY </th>
+                          <th> MONDAY </th>
+                          <th> TUESDAY </th>
+                          <th> WEDNESDAY </th>
+                          <th> THURSDAY </th>
+                          <th> FRIDAY </th>
+                          <th> SATURDAY </th>
+                      </tr>
+                  </thead>
+          
+                  <tbody>
+                      <th> 1 </th>
+                      <th> 2 </th>
+                      <th> 3 </th>
+                      <th> 4 </th>
+                      <th> 5 </th>
+                      <th> 6 </th>
+                      <th> 7 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 8 </th>
+                      <th> 9 </th>
+                      <th> 10 </th>
+                      <th> 11 </th>
+                      <th> 12 </th>
+                      <th> 13 </th>
+                      <th> 14 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 15 </th>
+                      <th> 16 </th>
+                      <th> 17 </th>
+                      <th> 18 </th>
+                      <th> 19 </th>
+                      <th> 20 </th>
+                      <th> 21 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 22 </th>
+                      <th> 23 </th>
+                      <th> 24 </th>
+                      <th> 25 </th>
+                      <th> 26 </th>
+                      <th> 27 </th>
+                      <th> 28 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 29 </th>
+                      <th> 30 </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                  </tbody>
+
+              </table>
+              </div>
+              <br>
+              <br>
+        </div>
+
+        <!-- OCTOBER -->
+        <div align="center">
+            <button class="toggle" style="background-color: white; border: 10%; font-weight: bold; font-size: 160%; width: 50%; height: 40px;">
+              OCTOBER</button>
+              <div class="answer"> 
+                <h1 align="center" style="-webkit-text-stroke-width: 2px; -webkit-text-stroke-color: black;">OCTOBER 2024</h1>
+                <table align="center" border="1cm" style="width: 75%; size: 70%" >
+                  <thead align="center" style="color: white; height: 1cm;">
+                      <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
+                          <th> SUNDAY </th>
+                          <th> MONDAY </th>
+                          <th> TUESDAY </th>
+                          <th> WEDNESDAY </th>
+                          <th> THURSDAY </th>
+                          <th> FRIDAY </th>
+                          <th> SATURDAY </th>
+                      </tr>
+                  </thead>
+          
+                  <tbody>
+                      <th>  </th>
+                      <th>  </th>
+                      <th> 1 </th>
+                      <th> 2 </th>
+                      <th> 3 </th>
+                      <th> 4 </th>
+                      <th> 5 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 6 </th>
+                      <th> 7 </th>
+                      <th> 8 </th>
+                      <th> 9 </th>
+                      <th> 10 </th>
+                      <th> 11 </th>
+                      <th> 12 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 13 </th>
+                      <th> 14 </th>
+                      <th> 15 </th>
+                      <th> 16 </th>
+                      <th> 17 </th>
+                      <th> 18 </th>
+                      <th> 19 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 20 </th>
+                      <th> 21 </th>
+                      <th> 22 </th>
+                      <th> 23 </th>
+                      <th> 24 </th>
+                      <th> 25 </th>
+                      <th> 26 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 27 </th>
+                      <th> 28 </th>
+                      <th> 29 </th>
+                      <th> 30 </th>
+                      <th> 31 </th>
+                      <th> </th>
+                      <th> </th>
+                  </tbody>
+
+              </table>
+              </div>
+              <br>
+              <br>
+        </div>
+
+        <!-- NOVEMBER -->
+        <div align="center">
+            <button class="toggle" style="background-color: white; border: 10%; font-weight: bold; font-size: 160%; width: 50%; height: 40px;">
+              NOVEMBER</button>
+              <div class="answer"> 
+                <h1 align="center" style="-webkit-text-stroke-width: 2px; -webkit-text-stroke-color: black;">NOVEMBER 2024</h1>
+                <table align="center" border="1cm" style="width: 75%; size: 70%" >
+                  <thead align="center" style="color: white; height: 1cm;">
+                      <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
+                          <th> SUNDAY </th>
+                          <th> MONDAY </th>
+                          <th> TUESDAY </th>
+                          <th> WEDNESDAY </th>
+                          <th> THURSDAY </th>
+                          <th> FRIDAY </th>
+                          <th> SATURDAY </th>
+                      </tr>
+                  </thead>
+          
+                  <tbody>
+                      <th>  </th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th> 1 </th>
+                      <th> 2 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 3 </th>
+                      <th> 4 </th>
+                      <th> 5 </th>
+                      <th> 6 </th>
+                      <th> 7 </th>
+                      <th> 8 </th>
+                      <th> 9 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 10 </th>
+                      <th> 11 </th>
+                      <th> 12 </th>
+                      <th> 13 </th>
+                      <th> 14 </th>
+                      <th> 15 </th>
+                      <th> 16 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 17 </th>
+                      <th> 18 </th>
+                      <th> 19 </th>
+                      <th> 20 </th>
+                      <th> 21 </th>
+                      <th> 22 </th>
+                      <th> 23 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 24 </th>
+                      <th> 25 </th>
+                      <th> 26 </th>
+                      <th> 27 </th>
+                      <th> 28 </th>
+                      <th> 29 </th>
+                      <th> 30 </th>
+                  </tbody>
+
+              </table>
+              </div>
+              <br>
+              <br>
+        </div>
+
+        <!-- DECEMBER -->
+        <div align="center">
+            <button class="toggle" style="background-color: white; border: 10%; font-weight: bold; font-size: 160%; width: 50%; height: 40px;">
+              DECEMBER</button>
+              <div class="answer"> 
+                <h1 align="center" style="-webkit-text-stroke-width: 2px; -webkit-text-stroke-color: black;">DECEMBER 2024</h1>
+                <table align="center" border="1cm" style="width: 75%; size: 70%" >
+                  <thead align="center" style="color: white; height: 1cm;">
+                      <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
+                          <th> SUNDAY </th>
+                          <th> MONDAY </th>
+                          <th> TUESDAY </th>
+                          <th> WEDNESDAY </th>
+                          <th> THURSDAY </th>
+                          <th> FRIDAY </th>
+                          <th> SATURDAY </th>
+                      </tr>
+                  </thead>
+          
+                  <tbody>
+                      <th> 1 </th>
+                      <th> 2 </th>
+                      <th> 3 </th>
+                      <th> 4 </th>
+                      <th> 5 </th>
+                      <th> 6 </th>
+                      <th> 7 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 8 </th>
+                      <th> 9 </th>
+                      <th> 10 </th>
+                      <th> 11 </th>
+                      <th> 12 </th>
+                      <th> 13 </th>
+                      <th> 14 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 15 </th>
+                      <th> 16 </th>
+                      <th> 17 </th>
+                      <th> 18 </th>
+                      <th> 19 </th>
+                      <th> 20 </th>
+                      <th> 21 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 22 </th>
+                      <th> 23 </th>
+                      <th> 24 </th>
+                      <th> 25 </th>
+                      <th> 26 </th>
+                      <th> 27 </th>
+                      <th> 28 </th>
+                  </tbody>
+          
+                  <tbody>
+                      <th> 29 </th>
+                      <th> 30 </th>
+                      <th> 31 </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                      <th> </th>
+                  </tbody>
+
+              </table>
+              </div>
+              <br>
+              <br>
+        </div>
+
+    </div>"
+            
+    </body>
+
+    <script>
+        document.querySelectorAll('.toggle').forEach(button => {
+            button.addEventListener('click', () => {
+              const answer = button.nextElementSibling;
+              answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+            });
+          });
+    </script>
+
 </html>
