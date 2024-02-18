@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
     <style>
         .answer {
             display: none;
 
             -webkit-animation-name: cssAnimation;
-            -webkit-animation-duration: .5s; 
-            -webkit-animation-iteration-count: 1;
+            -webkit-animation-duration: .2s;
+
+            animation-name: cssAnimation;
+            animation-duration: .2s;
+    
         }
 
         @-webkit-keyframes cssAnimation { 
@@ -20,7 +27,7 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(198, 199, 255);
+            background-color: rgb(186, 141, 210);
         }
     
         h1 {
@@ -38,6 +45,33 @@
             color: white;
         }
 
+        .menu {
+            background-color: #2f004a;
+            overflow: hidden;
+        }
+
+        .menu a {
+            float: right;
+            display: flex;
+            color: white;
+            text-align: center;
+            margin-top: 5px;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .menu a:hover {
+            background-color: #ddd;
+            color: black;
+            transition: 0.2s;
+            font-weight: bold;
+        }
+
+        .sunday{
+            background-color: red;
+        }
+
     </style>
     <body>
         <!-- global setting for all contents in the body is found in <style> -->
@@ -45,14 +79,18 @@
         <!-- header lines. -->
 
         <!-- current objective: menu bars. -->
-        
-        <div style="width: 100%; height: 70px; left: 0px; top: 0px; position: absolute; background: rgb(5, 0, 71)">
-            <img href="">
-            <h1 style="left: 100px; color: white;"><b>C A L E N D A R</b></h1>
+
+        <div class="menu">
+            <img src="BK IDK.png" width="120" height="60" style="position: relevant; float: left;">
+            <a href="calendar.html" style="font-weight: bold;"> CALENDAR </a>
+            <a href="contact.html"> CONTACT </a>
+            <a href="about.html"> ABOUT ME </a>
+            <a href="index.html"> HOME </a>
+            
         </div>
     
     <!-- buttons -->
-    <div style="top: 85px; position:relative;">
+    <div style="top: 50px; position:relative;">
         
         <!-- JANUARY -->
         <div align="center">
@@ -63,7 +101,7 @@
               <table align="center" border="1cm" style="width: 75%;" >
                 <thead align="center" style="color: white; height: 1cm;">
                     <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
-                        <th> SUNDAY </th>
+                        <th class="sunday"> SUNDAY </th>
                         <th> MONDAY </th>
                         <th> TUESDAY </th>
                         <th> WEDNESDAY </th>
@@ -138,7 +176,7 @@
                 <table align="center" border="1cm" style="width: 75%;" >
                   <thead align="center" style="color: white; height: 1cm;">
                       <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
-                          <th> SUNDAY </th>
+                          <th class="sunday"> SUNDAY </th>
                           <th> MONDAY </th>
                           <th> TUESDAY </th>
                           <th> WEDNESDAY </th>
@@ -213,7 +251,7 @@
                 <table align="center" border="1cm" style="width: 75%;" >
                   <thead align="center" style="color: white; height: 1cm;">
                       <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
-                          <th> SUNDAY </th>
+                          <th class="sunday"> SUNDAY </th>
                           <th> MONDAY </th>
                           <th> TUESDAY </th>
                           <th> WEDNESDAY </th>
@@ -298,7 +336,7 @@
                 <table align="center" border="1cm" style="width: 75%;" >
                   <thead align="center" style="color: white; height: 1cm;">
                       <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
-                          <th> SUNDAY </th>
+                          <th class="sunday"> SUNDAY </th>
                           <th> MONDAY </th>
                           <th> TUESDAY </th>
                           <th> WEDNESDAY </th>
@@ -373,7 +411,7 @@
                 <table align="center" border="1cm" style="width: 75%;" >
                   <thead align="center" style="color: white; height: 1cm;">
                       <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
-                          <th> SUNDAY </th>
+                          <th class="sunday"> SUNDAY </th>
                           <th> MONDAY </th>
                           <th> TUESDAY </th>
                           <th> WEDNESDAY </th>
@@ -448,7 +486,7 @@
                 <table align="center" border="1cm" style="width: 75%; size: 70%" >
                   <thead align="center" style="color: white; height: 1cm;">
                       <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
-                          <th> SUNDAY </th>
+                          <th class="sunday"> SUNDAY </th>
                           <th> MONDAY </th>
                           <th> TUESDAY </th>
                           <th> WEDNESDAY </th>
@@ -533,7 +571,7 @@
                 <table align="center" border="1cm" style="width: 75%; size: 70%" >
                   <thead align="center" style="color: white; height: 1cm;">
                       <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
-                          <th> SUNDAY </th>
+                          <th class="sunday"> SUNDAY </th>
                           <th> MONDAY </th>
                           <th> TUESDAY </th>
                           <th> WEDNESDAY </th>
@@ -608,7 +646,7 @@
                 <table align="center" border="1cm" style="width: 75%; size: 70%" >
                   <thead align="center" style="color: white; height: 1cm;">
                       <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
-                          <th> SUNDAY </th>
+                          <th class="sunday"> SUNDAY </th>
                           <th> MONDAY </th>
                           <th> TUESDAY </th>
                           <th> WEDNESDAY </th>
@@ -683,7 +721,7 @@
                 <table align="center" border="1cm" style="width: 75%; size: 70%" >
                   <thead align="center" style="color: white; height: 1cm;">
                       <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
-                          <th> SUNDAY </th>
+                          <th class="sunday"> SUNDAY </th>
                           <th> MONDAY </th>
                           <th> TUESDAY </th>
                           <th> WEDNESDAY </th>
@@ -758,7 +796,7 @@
                 <table align="center" border="1cm" style="width: 75%; size: 70%" >
                   <thead align="center" style="color: white; height: 1cm;">
                       <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
-                          <th> SUNDAY </th>
+                          <th class="sunday"> SUNDAY </th>
                           <th> MONDAY </th>
                           <th> TUESDAY </th>
                           <th> WEDNESDAY </th>
@@ -833,7 +871,7 @@
                 <table align="center" border="1cm" style="width: 75%; size: 70%" >
                   <thead align="center" style="color: white; height: 1cm;">
                       <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
-                          <th> SUNDAY </th>
+                          <th class="sunday"> SUNDAY </th>
                           <th> MONDAY </th>
                           <th> TUESDAY </th>
                           <th> WEDNESDAY </th>
@@ -908,7 +946,7 @@
                 <table align="center" border="1cm" style="width: 75%; size: 70%" >
                   <thead align="center" style="color: white; height: 1cm;">
                       <tr bgcolor="rgb(0,2,148);" style="font-size: 20px">
-                          <th> SUNDAY </th>
+                          <th class="sunday"> SUNDAY </th>
                           <th> MONDAY </th>
                           <th> TUESDAY </th>
                           <th> WEDNESDAY </th>
