@@ -1,9 +1,6 @@
 .answer {
     display: none;
 
-    -webkit-animation-name: cssAnimation;
-    -webkit-animation-duration: .2s;
-
     animation-name: cssAnimation;
     animation-duration: .2s;
 
@@ -11,16 +8,16 @@
 
 @-webkit-keyframes cssAnimation { 
     from { 
-        -webkit-transform: rotate(0deg) scale(0) skew(0deg); 
+        -webkit-transform: rotate(0deg) scale(0); 
     } 
     to { 
-        -webkit-transform: rotate(360deg) scale(1) skew(0deg); 
+        -webkit-transform: rotate(360deg) scale(1); 
     } 
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(186, 141, 210);
+    background-color: rgb(143, 86, 173);
 }
 
 h1 {
@@ -39,8 +36,11 @@ th:hover {
 }
 
 .menu {
-    background-color: #2f004a;
+    background-color: #3c005f;
     overflow: hidden;
+    
+    /** box shadow: hor vert blur spread rgba/rgb **/ 
+    box-shadow: -3px 3px 4px 0px rgba(0,0,0,0.4);
 }
 
 .menu a {
@@ -63,4 +63,14 @@ th:hover {
 
 .sunday{
     background-color: red;
+}
+
+.toggle{
+    /** box shadow: hor vert blur spread rgba/rgb **/ 
+    box-shadow: -2px 2px 4px 0px rgba(0,0,0,0.2);
+}
+
+#nov-sixteen:hover{
+    background-color: blue;
+    color: white;
 }
