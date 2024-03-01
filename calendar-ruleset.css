@@ -1,12 +1,26 @@
 .answer {
     display: none;
 
+    -webkit-animation-name: cssAnimation;
+    -webkit-animation-duration: .2s;
+
     animation-name: cssAnimation;
     animation-duration: .2s;
 
 }
 
 @-webkit-keyframes cssAnimation { 
+    from { 
+        -webkit-transform: rotate(0deg) scale(0); 
+    } 
+    to { 
+        -webkit-transform: rotate(360deg) scale(1); 
+    } 
+}
+
+/** always define the original, the @keyframes. extra ra ang -webkit **/
+
+@keyframes cssAnimation { 
     from { 
         -webkit-transform: rotate(0deg) scale(0); 
     } 

@@ -4,8 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="contact-ruleset.css">
 </head>
-<body>
-    <!-- contact. ibutang diri katong form chuchu. or let the choose for email nalang. kapoy HAHAHAHAHA -->
+<body>    
+    <div class="menu">
+        <img src="BK IDK.png" width="120" height="60" style="position: relevant; float: left;">
+        <a href="calendar.html"> CALENDAR </a>
+        <a href="contact.html" style="font-weight: bold;"> CONTACT </a>
+        <a href="about.html"> ABOUT ME </a>
+        <a href="index.html"> HOME </a>
+    </div>
+
+    <!-- contact. ibutang diri katong form chuchu. or let them choose for email nalang. kapoy HAHAHAHAHA -->
+    
+    <!-- 
+        contents:
+        > social media
+            > github
+            > facebook (brent kyrjeh abenir)
+            > youtube (sazaki ren)
+            > linkedin? idk. create usa ko.
+        > contact form
+            > name
+            > email
+            > address
+        
+    -->
+
+    <br>
+
+    <!-- social media -->
+    <div class="socmed" align="center">
+        <h2 style="text-decoration: underline;"> Social Media Platforms </h2> 
+
+        <!-- a href url to the page you want to link to -->
+        <a href="https://www.facebook.com/profile.php?id=100085321566082" id="fb-button">
+            <button width="10%">Facebook</button>
+        </a>
+        <a href="https://github.com/kajieAbenir" id="github-button">
+            <button width="10%">Github</button>
+        </a>
+
+        <a href="https://www.youtube.com/@sazakidesuu" id="youtube-button">
+            <button width="10%">YouTube</button>
+        </a>
+        
+    </div>
+
+    <p align="center" style="color: white; font-weight: bold;"> Any feedbacks? Comments? Recommendations? Let me know via this contact form :> </p>
+
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form style="margin-bottom: -3%;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Complete Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email address" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Type your message here." required></textarea>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+    <br>
+
+    <!-- script here to send to contact -->
+    <script src="contact.js"></script>
 </body>
 </html>

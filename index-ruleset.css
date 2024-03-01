@@ -37,28 +37,33 @@ body{
 }
 
 .index-buttons{
-    background-color: #26003b;
-    color: white;
+  background-color: #26003b;
+  color: white;
 }
 
 .index-buttons button {
-    background-color: #4f007c;
-    border: 2px solid white;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
+  background-color: #4f007c;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 160px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  box-shadow: -2px 3px 3px 0px black;
   }
   
 .index-buttons button:hover {
-    background-color: #26003b; 
+  background-color: #26003b; 
+  transition-duration: .2s;
 }
 
-.image{
-    
+#image{
+  width: auto;
+  height: 200px;
+  position: absolute;
 }
