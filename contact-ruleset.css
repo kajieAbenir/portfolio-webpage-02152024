@@ -123,3 +123,43 @@ body{
     color: white;
     transition: .2s;
 }
+
+/* SCROLLBAR RULESET. CHUY MAN. */
+
+::-webkit-scrollbar {
+    width: 10px; /* width of the scrollbar track */
+    height: 10px; /* height of the scrollbar track */
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff; /* background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #26003b; /* color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4f007c; /* color of the scrollbar thumb on hover */
+}
+
+/* ??????????????? */
+
+#troll-button {
+    position: relative;
+    margin: auto;
+    max-width: 600px;
+    color: white;
+}
+
+#troll-button button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 160px;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-top: 1000%;
+}
