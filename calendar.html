@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar</title>
     <link rel="stylesheet" type="text/css" href="calendar-ruleset.css">
-    <body>
-        <!-- global setting for all contents in the body is found in <style> -->
+</head>
+<body>
+    <!-- global setting for all contents in the body is found in <style> -->
 
-        <!-- header lines. -->
+    <!-- header lines. -->
 
-        <!-- current objective: menu bars. -->
+    <!-- current objective: menu bars. -->
 
-        <div class="menu">
-            <img src="BK IDK.png" width="120" height="60" style="position: relevant; float: left;">
-            <a href="calendar.html" style="font-weight: bold;"> CALENDAR </a>
-            <a href="contact.html"> CONTACT </a>
-            <a href="about.html"> ABOUT ME </a>
-            <a href="index.html"> HOME </a>
-        </div>
+    <div class="menu">
+        <img src="BK IDK.png" width="120" height="60" style="position: relevant; float: left;">
+        <a href="calendar.html" style="font-weight: bold;"> CALENDAR </a>
+        <a href="contact.html"> CONTACT </a>
+        <a href="about.html"> ABOUT ME </a>
+        <a href="index.html"> HOME </a>
+    </div>
     
     <!-- buttons -->
 
     <!-- note 02262024: make use of button class. i think it needed gyud to be unified setting... -->
-    <!-- di na nako i-usab kay katulgon nako. SIR MANGAYO KO UG KAPE PLS ONE LITER LANG IHINUBIG NAKO -->
     <div style="top: 50px; position:relative;">
         
         <!-- JANUARY -->
@@ -947,17 +948,17 @@
               <br>
         </div>
 
-    </div>"
+    </div>
             
-    </body>
+</body>
 
-    <script>
-        document.querySelectorAll('.toggle').forEach(button => {
-            button.addEventListener('click', () => {
-              const answer = button.nextElementSibling;
-              answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
-            });
-          });
-    </script>
+<script>
+    document.querySelectorAll('.toggle').forEach(button => {
+        button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+        });
+    });
+</script>
 
 </html>
