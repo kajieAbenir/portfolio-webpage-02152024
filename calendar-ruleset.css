@@ -1,53 +1,9 @@
-.answer {
-    display: none;
-
-    -webkit-animation-name: cssAnimation;
-    -webkit-animation-duration: .2s;
-
-    animation-name: cssAnimation;
-    animation-duration: .2s;
-
-}
-
-@-webkit-keyframes cssAnimation { 
-    from { 
-        -webkit-transform: rotate(0deg) scale(0); 
-    } 
-    to { 
-        -webkit-transform: rotate(360deg) scale(1); 
-    } 
-}
-
-/** always define the original, the @keyframes. extra ra ang -webkit **/
-
-@keyframes cssAnimation { 
-    from { 
-        -webkit-transform: rotate(0deg) scale(0); 
-    } 
-    to { 
-        -webkit-transform: rotate(360deg) scale(1); 
-    } 
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(143, 86, 173);
+    background-color: #26003b;
 }
 
-h1 {
-    color: white;
-}
-
-tbody {
-    height: 2cm;
-    font-size: 25px;
-}
-
-th:hover {
-    background-color: rgb(0, 0, 0);
-    transition-duration: 0.2s;
-    color: white;
-}
+/* MENU BAR RULESETS */
 
 .menu {
     background-color: #3c005f;
@@ -75,16 +31,88 @@ th:hover {
     font-weight: bold;
 }
 
-.sunday{
-    background-color: red;
-}
+/* SLIDESHOW EPEKS */
 
-.toggle{
-    /** box shadow: hor vert blur spread rgba/rgb **/ 
-    box-shadow: -2px 2px 4px 0px rgba(0,0,0,0.2);
+.slideshow {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
 }
-
-#nov-sixteen:hover{
-    background-color: blue;
+  
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+  
+.slide.current {
+    opacity: 1;
+}
+  
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+  
+.prev {
+    left: 0;
+}
+  
+.next {
+    right: 0;
+}
+
+/* TABLE RULESETS */
+
+h1{
+    color: white;
+    margin-top: 5%;
+    text-shadow: -3px 3px 3px black;
+    size: 120%;
+}
+
+table{
+    width: 80%;
+    background-color: #3c005f;
+}
+
+thead{
+    color: white; 
+    height: 1cm;
+}
+
+tbody {
+    height: 1.7cm;
+    font-size: 25px;
+}
+
+th{
+    color: white;
+    box-shadow: -3px 3px 3px black;
+}
+
+.content th:hover {
+    background-color: rgb(0, 0, 0);
+    transition-duration: 0.2s;
+    color: white;
+}
+
+.header{
+    background-color: rgb(0,2,148); 
+    font-size: 20px;
+}
+
+.sunday{
+    background-color: darkred;
 }
