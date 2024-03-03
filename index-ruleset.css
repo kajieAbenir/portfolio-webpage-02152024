@@ -8,6 +8,13 @@ body{
   background-color: #3c005f;
   overflow: hidden;
   box-shadow: -3px 3px 2px 0px rgba(0,0,0,0.4);
+  
+  /* para dili ma-select ang text sa menu */
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .menu a {

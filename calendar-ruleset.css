@@ -11,6 +11,13 @@ body {
     
     /** box shadow: hor vert blur spread rgba/rgb **/ 
     box-shadow: -3px 3px 4px 0px rgba(0,0,0,0.4);
+    
+    /* para dili ma-select ang text sa menu */
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .menu a {
@@ -102,17 +109,30 @@ th{
     box-shadow: -3px 3px 3px black;
 }
 
-.content th:hover {
-    background-color: rgb(0, 0, 0);
-    transition-duration: 0.2s;
-    color: white;
+button{
+    font-size: large;
+    font-weight: bold;
 }
+
+/* TABLE HEADER RULESETS (for sunday, monday, etc.) */
 
 .header{
     background-color: rgb(0,2,148); 
     font-size: 20px;
 }
 
-.sunday{
+.header th:nth-child(1){ /* sunday cell. color red kay sunday man. alangan. */
     background-color: darkred;
+}
+
+.header th:nth-child(4){ /*thursday cell. pagamyan. same also sa below.*/
+    font-size: 80%;
+}
+
+.header th:nth-child(5){
+    font-size: 90%;
+}
+
+.header th:nth-child(7){
+    font-size: 90%;
 }
