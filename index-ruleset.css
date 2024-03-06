@@ -70,12 +70,88 @@ body{
   transition-duration: .2s;
 }
 
+/* loading full image here */
+
 #image{
+  max-width: 100%;
   width: auto;
-  height: 410px;
+  max-height: 60%;
+  height: 370px;
+
   position: relative;
   float: right;
   margin-top: 5%;
   margin-right: 10px;
+
   box-shadow: -2px 3px 5px 0px black;
+
+  /* adds a rounded-border effect para chuy */
+  border-radius: 5px;
 }
+
+/* tablet view, with criteria beginning BETWEEN 801px-1200px */
+
+@media screen and (max-width: 1200px) {
+  .text-content{
+    margin-top: 0%;
+    width: auto;
+    align-self: center;
+  }
+
+  #image{
+
+    /* suwayon tanang align para ma-align gyud bisag di gyud kami (arat shat boss dev HAHAHAHA)*/
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    float: none;
+
+    height: auto;
+  }
+}
+
+/* mobile view, with criteria beginning 800px BELOW */
+
+
+@media screen and (max-width: 800px) {
+
+  #image{
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    float: none;
+  }
+
+  .text-content{
+    text-align: center;
+  }
+
+  .menu a{
+    font-size: 15px;
+    margin-top: -1%;
+  }
+
+  
+
+  .menu img {
+    height: 40px;
+    width: 80px;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  /* sets home button to zero kay huot na. */
+  .menu a:nth-child(5){
+    opacity: 0;
+  }
+}
+
+/* kapoy no? pero i-copy pa baya ni ang css sa pikas files :') 
+
+sige kana lang usa for tonight kay sige nag reklamo si mama*/
+
+/* NOTE FROM 'DEVELOPER KUNO':
+
+chuy sa? we now both have tablet and mobile view. pero of cuorse in my end, it's not really an assurance.
+both landscape and portrait modes of both phone and tablet perspectives are already 'automated' to adjust. for me, no need to worry. simplicity is oke for now basta functional lang usa. */
