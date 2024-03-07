@@ -63,11 +63,11 @@ body{
   margin-right: 20px;
   margin-bottom: 10px;
   box-shadow: -2px 3px 3px 0px black;
-  }
-  
+}
+
 .index-buttons button:hover {
-  background-color: #26003b; 
-  transition-duration: .2s;
+  background-color: #26003b;
+  transition-duration: .15s;
 }
 
 /* loading full image here */
@@ -88,6 +88,8 @@ body{
   /* adds a rounded-border effect para chuy */
   border-radius: 5px;
 }
+
+
 
 /* tablet view, with criteria beginning BETWEEN 801px-1200px */
 
