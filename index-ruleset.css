@@ -35,6 +35,26 @@ body{
   font-weight: bold;
 }
 
+/* SCROLLBAR RULESET. CHUY MAN. */
+
+::-webkit-scrollbar {
+  width: 10px; /* width of the scrollbar track */
+  height: 10px; /* height of the scrollbar track */
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff; /* background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #26003b; /* color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4f007c; /* color of the scrollbar thumb on hover */
+}
+
+
 .text-content{
   color: white;
   width: 40%;
@@ -89,7 +109,7 @@ body{
   border-radius: 5px;
 }
 
-
+/*view adjustments*/
 
 /* tablet view, with criteria beginning BETWEEN 801px-1200px */
 
@@ -133,8 +153,6 @@ body{
     margin-top: -1%;
   }
 
-  
-
   .menu img {
     height: 40px;
     width: 80px;
@@ -142,10 +160,19 @@ body{
 
 }
 
-@media screen and (max-width: 550px) {
-  /* sets home button to zero kay huot na. */
-  .menu a:nth-child(5){
-    opacity: 0;
+@media screen and (max-width: 550px){
+  .menu img {
+    margin-left: -30%;
+    opacity: 1;
+  }
+
+  .menu a{
+    font-size: 15px;
+    margin-top: -1%;
+    margin-right: 5%;
+    padding: 14px 10px;
+    float: right;
+    display: inline-flex;
   }
 }
 
