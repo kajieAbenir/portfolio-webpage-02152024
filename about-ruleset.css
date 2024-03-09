@@ -216,17 +216,58 @@ murag atong gi-select ang <li> nga naa sulod sa <ul> */
 
 #img-portfolio img{
     display: inline-flexbox;
-    max-width: 100%;
+    max-width: 50%;
     width: 100%;
     height: auto;
     margin-bottom: 1%;
     position: relative;
 }
 
- #img-portfolio{
+#img-portfolio{
     text-align: center;
     justify-content: center;
     width: 100%;
+}
+
+#code-portfolio{
+    margin-left: 2%;
+    max-width: 80%;
+    color: white;
+    font-size: 120%;
+    text-shadow: -3px 4px 4px rgba(0,0,0,0.6);
+}
+
+.code-box{
+    display: inline-table;
+    flex-wrap: wrap;
+    width: 30%;
+    padding: 1%;
+    padding-bottom: 2%;
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+    text-shadow: none;
+    margin-right: 1%;
+}
+
+.code-box img{
+    width: 100%;
+    text-align: center;
+}
+
+.code-box a{
+    background-color: #4f007c;
+    text-decoration: none;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 25%;
+    box-shadow: -2px 3px 3px 0px black; 
 }
 
 /*view adjustments*/
@@ -247,7 +288,24 @@ murag atong gi-select ang <li> nga naa sulod sa <ul> */
     .timeline {
         max-width: 100%;
     }
-  
+
+    .code-box{
+        align-items: center;
+        display: inline-flexbox;
+        width: 100%;
+        margin: 3%;
+        padding: 3%;
+        padding-bottom: 5%;
+    }
+
+    .code-box a{
+        margin: 0 auto;
+    }
+
+    #img-portfolio img{
+        max-width: 100%;
+        width: 100%;
+    }
 }
   
 @media screen and (max-width: 550px){
