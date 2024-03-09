@@ -10,6 +10,14 @@ body{
     user-select: none;
 }
 
+img{
+    box-shadow: -3px 3px 4px 0px rgba(0,0,0,0.4);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 /** menu rulesets **/
 
 .menu {
@@ -145,11 +153,12 @@ body{
 /* EDUCATION BACKGROUND RULESETS */
 
 /*adds margin sa left, mura na siyag naay indention chuchu */
-#timeline{
+.timeline{
     margin-left: 5%;
+    max-width: auto;
 }
 
-#timeline ul{
+.timeline ul{
     list-style-type: none; /* Remove default bullets */
     margin-top: -2px;
 }
@@ -161,14 +170,26 @@ body{
 
 murag atong gi-select ang <li> nga naa sulod sa <ul> */
 
-#timeline ul li::before{
+.timeline ul li::before{
     content: "►"; /* Sets desired character */
     margin-right: 10px; /* Add spacing BETWEEN bullet and text */
+}
+
+#education{
+    max-width: fit-content;
 }
 
 #education li{
     margin-left: 3%;
     margin-bottom: 8px;
+}
+
+#education hr{
+    width: 101%;
+    height: 2px;
+    background-color: white;
+    margin-left: -2%;
+    margin-bottom: 2%;
 }
 
 .section-container{
@@ -179,17 +200,34 @@ murag atong gi-select ang <li> nga naa sulod sa <ul> */
     text-shadow: -3px 4px 4px rgba(0,0,0,0.6);
 }
 
+.image-showcase img{
+    display: inline-flexbox;
+    max-width: 100%;
+    width: 30%;
+    height: auto;
+    position: relative;
+}
 
+.image-showcase{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
 
+#img-portfolio img{
+    display: inline-flexbox;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1%;
+    position: relative;
+}
 
-
-
-
-
-
-
-
-
+ #img-portfolio{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
 
 /*view adjustments*/
   
@@ -204,6 +242,10 @@ murag atong gi-select ang <li> nga naa sulod sa <ul> */
     .menu img {
         height: 40px;
         width: 80px;
+    }
+
+    .timeline {
+        max-width: 100%;
     }
   
 }
